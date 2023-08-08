@@ -1,0 +1,99 @@
+.featured {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featured--horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+  padding-bottom: 10em;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+.featured--name {
+  font-size: 4em;
+  font-weight: bold;
+}
+.featured--info {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.featured--points,
+.featured--year,
+.featured--seasons {
+  display: inline-block;
+  margin-right: 1em;
+}
+.featured--points {
+  color: #46d369;
+}
+.featured--description {
+  max-width: 40%;
+  margin-top: 1em;
+  font-size: 1.4em;
+  color: #999;
+}
+.featured--buttons {
+  margin-top: 1em;
+}
+.featured--play,
+.featured--my-list {
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 0.6em 1.5em;
+  border-radius: 0.2em;
+  margin-right: 0.5em;
+  opacity: 1;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+.featured--play:hover,
+.featured--my-list:hover {
+  opacity: 0.7;
+}
+.featured--play {
+  background: #fff;
+  color: #111;
+}
+.featured--my-list {
+  background: #333;
+  color: #fff;
+}
+.featured--genres {
+  margin-top: 1em;
+  font-size: 1.4em;
+  color: #999;
+}
+
+@media (max-width: 640px) {
+  .feattured {
+    height: 90vh;
+  }
+  .featured--name {
+    font-size: 2em;
+  }
+  .featured--description {
+    font-size: 0.9em;
+    max-width: 100%;
+    margin-right: 1em;
+  }
+  .featured--genres {
+    font-size: 0.9em;
+  }
+  .featured--play,
+  .featured--my-list,
+  .featured--info {
+    font-size: 1em;
+  }
+}
